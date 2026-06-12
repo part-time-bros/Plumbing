@@ -1,0 +1,28 @@
+/* Append to global.css — skip link + missing gap var */
+
+/* ─────────────────────────────────────────────────────
+   SKIP LINK — UUPM accessibility rule
+───────────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  background: var(--accent);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.6em 1.2em;
+  border: var(--border);
+  border-radius: 0;
+  transition: top 0.1s;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid var(--white);
+  outline-offset: 2px;
+}
